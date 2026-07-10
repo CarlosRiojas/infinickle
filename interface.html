@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfiNickle</title>
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+    <!--interface and buttons-->
+    <div id="interface">
+        <h1>Welcome to InfiNickle</h1>
+        <p>Type your tags and enjoy endless random videos!</p>
+           <!--tagbox-->
+    <div id="tagbox">
+        <h2>Tag Box</h2>
+        <input type="text" id="tagInput" placeholder="Enter tags here">
+        <button id="addTagButton">Add Tag</button>
+        <ul id="tagList"></ul>
+    </div>
+    <div>
+        <button id="searchTagButton">Play Tags!</button>
+    </div>
+        <div id="controls">
+            <button id="playButton">Play</button>
+            <button id="pauseButton">Pause</button>
+            <button id="nextButton">Next</button>
+            <button id="stopButton">Stop</button>
+            <button id="clearTagsButton">Clear Tags</button>
+        </div>
+        <div id="infinitePlaylistControl">
+            <label for="infinitePlaylistCheckbox">Infinite Playlist</label>
+            <input type="checkbox" id="infinitePlaylistCheckbox">
+        </div>
+    </div>
+    <!--player-->
+    <div id="player">
+        <!--embedded player content-->
+
+    </div>
+
+    <script type="module" src="initialTs.js"></script>
+</body>
+</html>

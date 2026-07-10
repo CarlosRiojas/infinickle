@@ -1,0 +1,63 @@
+#interface {
+    display: flex;
+    font:100% Arial, sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#tagbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#addTagButton{
+     display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 640px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+#controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+#searchTagButton{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#clearTagsButton{
+    display:flex;
+    size:10px
+}
+
+#interface h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
