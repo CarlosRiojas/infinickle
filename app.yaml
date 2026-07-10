@@ -1,8 +1,8 @@
-kind: wasmer.io/App.v0
 name: infinickle
+app_id: da_2dAIdtrUB7Ew
 owner: carlosriojas
 package: .
-app_id: da_2dAIdtrUB7Ew
+kind: wasmer.io/App.v0
 annotations:
   shipitcli.com/config:
     commands: {}
