@@ -1,4 +1,4 @@
-const ytkey = "AIzaSyBHBKKdkJp4wZUmxOItKKUF8oC635IVda8";
+import { ytkey } from './youtubeapi.js';
 let myTags = [];
 let nextPageToken = "";
 const tagInput = document.getElementById('tagInput');
