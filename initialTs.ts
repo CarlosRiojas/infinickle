@@ -1,4 +1,5 @@
-import { ytkey } from './youtubeapi.js';
+const ytkey = "AIzaSyBfazAw3bfrveawwCSBRitMGdyTE-ET2Lc";
+
 
 let myTags: string[] = [];
 let nextPageToken: string = "";
@@ -13,8 +14,8 @@ let player: any;
 // When clicked, it checks if the input field is not empty, adds the tag to the myTags array
 //  creates a new list item in the tagList, and clears the input field.
 addTagButton?.addEventListener('click', () => {
-    if(!tagInput || !tagList) return;
-    
+    if (!tagInput || !tagList) return;
+
     const newTag = tagInput.value.trim();
 
     /*if there is an input and not an empty */
@@ -24,16 +25,16 @@ addTagButton?.addEventListener('click', () => {
         let listItem = document.createElement('li');/*this creates a new list*/
         listItem.textContent = newTag; // this creates the text context to be taken as data*/
         tagList.appendChild(listItem);//this appends it to the ul block
-        
+
         tagInput.value = ''; // Clear the input field after adding the tag
         console.log('Current Tags:', newTag); // Log the current tags to the console
     }
-        }
-            ) 
+}
+)
 //Buttons definition and asignment of event listeners to control the YouTube player.
 const playButton = document.getElementById('playButton') as HTMLButtonElement | null;
 const pauseButton = document.getElementById('pauseButton') as HTMLButtonElement | null;
-const stopButton = document.getElementById('stopButton') as HTMLButtonElement | null;  
+const stopButton = document.getElementById('stopButton') as HTMLButtonElement | null;
 const nextButton = document.getElementById('nextButton') as HTMLButtonElement | null;
 const infinitePlaylistCheckbox = document.getElementById('infinitePlaylistCheckbox') as HTMLInputElement | null;
 const clearTagsButton = document.getElementById('clearTagsButton') as HTMLButtonElement | null;
@@ -44,8 +45,8 @@ function onPlayerReady(event: any) {
 
 
 infinitePlaylistCheckbox?.addEventListener('change', () => {
-     infinitePlaylistCheckbox.checked;
-    })
+    infinitePlaylistCheckbox.checked;
+})
 
 playButton?.addEventListener('click', () => {
     if (player) {
@@ -105,15 +106,15 @@ async function tagSearch() {
 
 function onPlayerStateChange(event: any) {
     console.log('Player state changed', event.data);
-    if(infinitePlaylistCheckbox?.checked && event.data === YT.PlayerState.ENDED) {
+    if (infinitePlaylistCheckbox?.checked && event.data === YT.PlayerState.ENDED) {
         tagSearch().then((videoIdString) => {
-                player.loadPlaylist({
-                    index: 0,
-                    playlist: videoIdString,
-                    startSeconds: 0,
-                });
-            }
-)
+            player.loadPlaylist({
+                index: 0,
+                playlist: videoIdString,
+                startSeconds: 0,
+            });
+        }
+        )
     }
 }
 
