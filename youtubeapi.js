@@ -1,2 +1,2 @@
-export const ytkey = "AIzaSyBfazAw3bfrveawwCSBRitMGdyTE-ET2Lc";
+const ytkey = "AIzaSyBHBKKdkJp4wZUmxOItKKUF8oC635IVda8";
 
